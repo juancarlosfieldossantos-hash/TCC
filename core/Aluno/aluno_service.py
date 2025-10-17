@@ -1,9 +1,9 @@
 from core.aluno.aluno_repository import AlunoRepository
-
+from core.aluno.aluno import Aluno
 
 class AlunoService:
     def __init__(self):
-    self.repository = (AlunoRepository)
+      self.repository = AlunoRepository()
 
     def listar_alunos(self):
         return self.repository.listar()
